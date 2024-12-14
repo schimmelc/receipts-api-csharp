@@ -24,11 +24,11 @@ OR
 1.  Clone the repository and navigate to the project directory.
 ```
 git clone https://github.com/schimmelc/receipts-api-csharp.git
-cd receipts-api-csharp
+cd receipts-api-csharp/src/ReceiptsApi.Web
 ```
 2.  Build the Docker image and run the container.
 ```
-docker build -t receipts-api
+docker build -t receipts-api .
 docker run -p 8080:8080 --name receipts-api-container receipts-api
 
 # To run and specify the dotnet environment
